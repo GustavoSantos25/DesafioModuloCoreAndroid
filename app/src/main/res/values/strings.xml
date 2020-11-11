@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">DesafioModuloCoreAndroid</string>
+    <string name="title_login">Digital House Foods</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_senha">Password</string>
+    <string name="hint_Repeatesenha">Repeate password</string>
+    <string name="hint_name">Name</string>
+    <string name="email">dh@digitalhouse.com</string>
+    <string name="senha">******************</string>
+    <string name="login">LOG IN</string>
+    <string name="register">REGISTER</string>
+    <string name="name">DigitalHouse</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
