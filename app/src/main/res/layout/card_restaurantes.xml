@@ -3,13 +3,13 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="347dp">
+    android:layout_width="354dp"
+    android:layout_height="297dp">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardPokemon"
-        android:layout_width="380dp"
-        android:layout_height="340dp"
+        android:layout_width="352dp"
+        android:layout_height="290dp"
         android:layout_margin="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,9 +27,9 @@
             <ImageView
                 android:id="@+id/ivImgRestCard"
                 android:layout_width="match_parent"
-                android:layout_height="251dp"
+                android:layout_height="211dp"
                 android:adjustViewBounds="true"
-                android:scaleType="centerInside"
+                android:scaleType="fitXY"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -38,47 +38,41 @@
                 app:layout_constraintVertical_bias="0.0"
                 app:srcCompat="@drawable/image1" />
 
-            <TextView
-                android:id="@+id/tvNomeRestaurante"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Tony Roma's"
-                android:textColor="@color/colorTitleRest"
-                android:textSize="30dp"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.085"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.836" />
+                app:layout_constraintVertical_bias="1.0">
 
-            <TextView
-                android:id="@+id/tvEndereco"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Av. Lavandisca, 717 - Indianópolis, São Paulo"
-                android:textColor="@color/colorBtnRegister"
-                android:textSize="15dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.214"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.915" />
+                <TextView
+                    android:id="@+id/tvNomeRestaurante"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tony Roma's"
+                    android:textColor="@color/colorTitleRest"
+                    android:textSize="27dp" />
 
-            <TextView
-                android:id="@+id/tvHorario"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Fecha às 22:00"
-                android:textColor="@color/colorBtnRegister"
-                android:textSize="14dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.063"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.975" />
+                <TextView
+                    android:id="@+id/tvEndereco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Av. Lavandisca, 717 - Indianópolis, São Paulo"
+                    android:textColor="@color/colorBtnRegister"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/tvHorario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fecha às 22:00"
+                    android:textColor="@color/colorBtnRegister"
+                    android:textSize="14dp" />
+            </LinearLayout>
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
