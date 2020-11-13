@@ -5,30 +5,26 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toolbar
 import androidx.navigation.fragment.findNavController
 import com.example.desafiomodulocoreandroid.R
-import kotlinx.android.synthetic.main.fragment_cadastro.view.*
+import kotlinx.android.synthetic.main.fragment_prato.view.*
 
 
-class CadastroFragment : Fragment() {
+class PratoFragment : Fragment() {
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
     }
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view: View = inflater!!.inflate(R.layout.fragment_cadastro, container, false)
-        view.btnLoginRegister.setOnClickListener {
-            findNavController().navigate(R.id.action_cadastroFragment_to_homeFragment)
-        }
-        view.toolbarRegister.setNavigationOnClickListener {
-            findNavController().navigate(R.id.action_cadastroFragment_to_loginFragment)
+        val view: View = inflater!!.inflate(R.layout.fragment_prato, container, false)
+        view.btnVoltar.setOnClickListener {
+            findNavController().navigate(R.id.action_pratoFragment_to_cardapioFragment)
         }
         return view
     }

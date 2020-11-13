@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.Toast
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.desafiomodulocoreandroid.R
 import com.example.desafiomodulocoreandroid.Restaurante
@@ -43,8 +44,11 @@ class HomeFragment : Fragment(), RestauranteAdapter.OnClickRestauranteListener {
     )
 
     override fun onClickRestaurante(position: Int) {
-        val nome = listRest[position].nome
-        Toast.makeText(context, nome, Toast.LENGTH_SHORT).show()
+        val rest = listRest[position]
+        when(rest.cod){
+            1-> findNavController().navigate(R.id.action_homeFragment_to_cardapioFragment)
+            else -> Toast.makeText(context, rest.nome, Toast.LENGTH_SHORT).show()
+        }
     }
 
 

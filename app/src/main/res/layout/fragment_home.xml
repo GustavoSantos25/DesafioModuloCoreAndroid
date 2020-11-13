@@ -8,6 +8,16 @@
     tools:context=".ui.HomeFragment"
     android:orientation="vertical">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarDH"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/title_login"
+        app:titleTextColor="@color/colorWhite"
+        android:background="@color/colorPrimary"
+        android:theme="@style/Theme.AppCompat.NoActionBar"/>
+
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvRestaurantes"

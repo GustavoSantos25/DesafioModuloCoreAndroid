@@ -12,6 +12,16 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="Register"
+            app:titleTextColor="@color/colorWhite"
+            app:navigationIcon="@drawable/ic_arrow_back"
+            android:background="@color/colorPrimary"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+
 
 
         <LinearLayout
@@ -88,7 +98,7 @@
             android:layout_width="match_parent"
             android:layout_height="23pt"
             android:layout_marginLeft="15dp"
-            android:layout_marginTop="130pt"
+            android:layout_marginTop="110pt"
             android:layout_marginRight="15dp"
             android:background="@color/colorBtnLogin"
             android:text="@string/register"
