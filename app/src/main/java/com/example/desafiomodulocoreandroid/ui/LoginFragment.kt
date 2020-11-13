@@ -26,6 +26,9 @@ class LoginFragment : Fragment() {
         view.btnRegister.setOnClickListener {
             findNavController().navigate(R.id.action_loginFragment_to_cadastroFragment)
         }
+        view.btnLogin.setOnClickListener {
+            findNavController().navigate(R.id.action_loginFragment_to_homeFragment)
+        }
         return view
     }
 

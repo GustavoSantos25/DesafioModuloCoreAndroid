@@ -7,4 +7,5 @@
     <color name="colorBtnLogin">#FF5252</color>
     <color name="colorLine">#C0CCDA</color>
     <color name="colorBtnRegister">#8492A6</color>
+    <color name="colorTitleRest">#1F2D3D</color>
 </resources>
