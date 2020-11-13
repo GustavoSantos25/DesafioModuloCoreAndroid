@@ -54,8 +54,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Tony Roma's"
+                    android:textStyle="bold"
                     android:textColor="@color/colorTitleRest"
-                    android:textSize="27dp" />
+                    android:textSize="25dp" />
 
                 <TextView
                     android:id="@+id/tvEndereco"
