@@ -14,7 +14,7 @@ import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {
     private lateinit var navController: NavController
-    //private lateinit var appBarConfiguration : AppBarConfiguration
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,11 +22,10 @@ class LoginActivity : AppCompatActivity() {
 
 
         navController = findNavController(R.id.navHostFragment)
-        //appBarConfiguration = AppBarConfiguration(setOf(R.id.loginFragment, R.id.homeFragment))
 
-        //setupActionBarWithNavController(navController, appBarConfiguration)
 
     }
+
 
 
 }

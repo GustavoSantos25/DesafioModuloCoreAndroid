@@ -15,11 +15,13 @@
         <action
             android:id="@+id/action_loginFragment_to_cadastroFragment"
             app:destination="@id/cadastroFragment"
-            app:enterAnim="@anim/fragment_close_enter"
-            app:exitAnim="@anim/fragment_close_exit" />
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/slide_out" />
         <action
             android:id="@+id/action_loginFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/slide_out"/>
     </fragment>
     <fragment
         android:id="@+id/cadastroFragment"
@@ -29,10 +31,14 @@
         tools:layout="@layout/fragment_cadastro" >
         <action
             android:id="@+id/action_cadastroFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/slide_out"/>
         <action
             android:id="@+id/action_cadastroFragment_to_loginFragment"
-            app:destination="@id/loginFragment" />
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/slide_in_back"
+            app:exitAnim="@anim/slide_out_back"/>
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
@@ -41,7 +47,14 @@
         tools:layout="@layout/fragment_home">
         <action
             android:id="@+id/action_homeFragment_to_cardapioFragment"
-            app:destination="@id/cardapioFragment" />
+            app:destination="@id/cardapioFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/slide_out"/>
+        <action
+            android:id="@+id/action_homeFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/slide_in_back"
+            app:exitAnim="@anim/slide_out_back"/>
     </fragment>
     <fragment
         android:id="@+id/cardapioFragment"
@@ -51,10 +64,14 @@
         android:background="@color/material_on_background_disabled">
         <action
             android:id="@+id/action_cardapioFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/slide_in_back"
+            app:exitAnim="@anim/slide_out_back"/>
         <action
             android:id="@+id/action_cardapioFragment_to_pratoFragment"
-            app:destination="@id/pratoFragment" />
+            app:destination="@id/pratoFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/slide_out"/>
     </fragment>
     <fragment
         android:id="@+id/pratoFragment"
@@ -63,6 +80,8 @@
         tools:layout="@layout/fragment_prato" >
         <action
             android:id="@+id/action_pratoFragment_to_cardapioFragment"
-            app:destination="@id/cardapioFragment" />
+            app:destination="@id/cardapioFragment"
+            app:enterAnim="@anim/slide_in_back"
+            app:exitAnim="@anim/slide_out_back"/>
     </fragment>
 </navigation>

@@ -41,7 +41,6 @@
             android:text="Salada com molho Gengibre"
             android:textColor="@color/colorWhite"
             android:textSize="25dp"
-            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/ivEspecPrato"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.172"
